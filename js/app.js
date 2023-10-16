@@ -7,13 +7,6 @@ const noCar2 = uList.querySelectorAll("li")[4];
 const removeItem1 = uList.removeChild(noCar1);
 const removeItem2 = uList.removeChild(noCar2);
 
-// 2.
-uList.classList.add("list");
-const allLi = uList.querySelectorAll("li");
-for(let i = 0; i < allLi.length; i++) {
-    let everyLi = allLi[i];
-    everyLi.classList.add("listItem");
-}
 
 // 3.
 const newLi = document.createElement('li');
@@ -24,6 +17,14 @@ const firstLi = document.createElement('li');
 firstLi.innerText = 'Ford';
 uList.appendChild(firstLi)
 
+
+// 2.
+uList.classList.add("list");
+const allLi = uList.querySelectorAll("li");
+for(let i = 0; i < allLi.length; i++) {
+    let everyLi = allLi[i];
+    everyLi.classList.add("listItem");
+}
 
 // 5.
 const form = document.querySelector('form');
